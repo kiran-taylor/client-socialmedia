@@ -12,7 +12,7 @@ const Home = () => {
   const { loading, data } = useQuery(FETCH_POSTS);
   console.log(data);
   return (
-    <Grid columns="three" style={{ margin: "20px" }}>
+    <Grid columns="three" style={{ margin: "10px" }}>
       <Grid.Row>
         {user && (
           <Grid.Column>
