@@ -13,7 +13,7 @@ const Home = () => {
   console.log(data);
   return (
     <div>
-      <Grid columns="three" style={{ margin: "10px" }}>
+      <Grid columns="three" style={{ margin: "5px" }}>
         <Grid.Row>
           {user && (
             <Grid.Row style={{ marginLeft: "30px" }}>
@@ -26,7 +26,7 @@ const Home = () => {
             <Transition.Group>
               {data.getPosts &&
                 data.getPosts.map((post) => (
-                  <Grid.Row key={post.id} style={{ marginLeft: "30px" }}>
+                  <Grid.Row key={post.id}>
                     <Post post={post} />
                   </Grid.Row>
                 ))}
