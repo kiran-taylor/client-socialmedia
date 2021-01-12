@@ -92,11 +92,14 @@ function SinglePost(props) {
               </Card.Content>
             </Card>
             {user && (
-              <Card style={{ margin: "10px" }} fluid>
+              <Card style={{ margin: "10px" }}>
                 <Card.Content>
                   <p>post a comment</p>
                   <Form>
-                    <div className="ui action input ">
+                    <div
+                      className="ui action input"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
                       <input
                         type="text"
                         placeholder="comment..."
